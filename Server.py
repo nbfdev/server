@@ -279,7 +279,7 @@ class Session:
 
 
 class Server(Colours):
-	def __init__(self, connect:Tuple[str,int]=("0.0.0.0",8080), auth:str=""):
+	def __init__(self, connect:Tuple[str,int]=("0.0.0.0",9367), auth:str=""):
 		super().__init__()
 		signal.signal(signal.SIGINT, self.exit_gracefully)
 		signal.signal(signal.SIGTERM, self.exit_gracefully)
